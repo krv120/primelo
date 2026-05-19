@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primelo — Custom Luxury Watches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">PRIMELO</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#craftsmanship">Craftsmanship</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section with 3D Watch -->
+  <section class="hero" id="hero">
+    <canvas id="watchCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-subtitle">Handcrafted Excellence</p>
+      <h1 class="hero-title">Time, <span class="gold">Reimagined</span></h1>
+      <p class="hero-desc">Every Primelo watch is a masterpiece of precision engineering and bold design — crafted to order, uniquely yours.</p>
+      <a href="#collection" class="btn btn-primary">Explore Collection</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section class="section collection" id="collection">
+    <div class="container">
+      <p class="section-subtitle">Our Watches</p>
+      <h2 class="section-title">The Collection</h2>
+      <div class="products-grid">
+        <div class="product-card" data-aos="fade-up">
+          <div class="product-image">
+            <div class="product-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" stroke="#C9A84C" stroke-width="2"/>
+                <circle cx="60" cy="60" r="48" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+                <line x1="60" y1="60" x2="60" y2="25" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+                <line x1="60" y1="60" x2="85" y2="60" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="60" cy="60" r="3" fill="#C9A84C"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Sovereign</h3>
+            <p>Classic elegance meets modern precision. 42mm case, sapphire crystal.</p>
+            <span class="product-price">$2,450</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-image">
+            <div class="product-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="5" width="90" height="110" rx="10" stroke="#C9A84C" stroke-width="2"/>
+                <circle cx="60" cy="55" r="35" stroke="#C9A84C" stroke-width="1.5"/>
+                <line x1="60" y1="55" x2="60" y2="30" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+                <line x1="60" y1="55" x2="80" y2="55" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="60" cy="55" r="2.5" fill="#C9A84C"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Apex Chrono</h3>
+            <p>Bold and athletic. Chronograph movement, titanium build.</p>
+            <span class="product-price">$3,200</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-image">
+            <div class="product-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" stroke="#C9A84C" stroke-width="2"/>
+                <circle cx="60" cy="60" r="50" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+                <circle cx="60" cy="60" r="45" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+                <line x1="60" y1="60" x2="45" y2="30" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+                <line x1="60" y1="60" x2="85" y2="50" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="60" y1="60" x2="60" y2="80" stroke="#C9A84C" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/>
+                <circle cx="60" cy="60" r="3" fill="#C9A84C"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Noir Edition</h3>
+            <p>Stealth luxury. DLC-coated case, luminous dial, limited run.</p>
+            <span class="product-price">$4,100</span>
+          </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-image">
+            <div class="product-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" stroke="#C9A84C" stroke-width="2"/>
+                <ellipse cx="60" cy="60" rx="40" ry="20" stroke="#C9A84C" stroke-width="1" opacity="0.4"/>
+                <line x1="60" y1="60" x2="60" y2="20" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+                <line x1="60" y1="60" x2="90" y2="60" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="60" cy="60" r="3" fill="#C9A84C"/>
+                <circle cx="60" cy="35" r="12" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Custom Build</h3>
+            <p>Your vision, our craft. Fully bespoke from dial to strap.</p>
+            <span class="product-price">From $5,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-image-frame">
+            <div class="about-canvas-wrap">
+              <canvas id="aboutCanvas"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-subtitle">Our Story</p>
+          <h2 class="section-title left">The Primelo Way</h2>
+          <p>Born from a passion for horology and a vision for individuality, Primelo creates watches that are more than accessories — they are statements. Each timepiece is designed in collaboration with its owner, ensuring every detail reflects personal style and uncompromising quality.</p>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Watches Crafted</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-label">Master Watchmakers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craftsmanship Section -->
+  <section class="section craftsmanship" id="craftsmanship">
+    <div class="container">
+      <p class="section-subtitle">Process</p>
+      <h2 class="section-title">Crafted With Purpose</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Consultation</h3>
+          <p>We listen to your vision — style, materials, complications — and sketch the blueprint for your timepiece.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Design</h3>
+          <p>Our designers translate your ideas into precise 3D renders and technical specifications.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Assembly</h3>
+          <p>Master watchmakers hand-assemble each component, ensuring perfection at every stage.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Delivery</h3>
+          <p>Your finished timepiece arrives in a bespoke presentation case, ready to make its mark.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <p class="section-subtitle">Reviews</p>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Primelo created something truly special for me. The attention to detail is extraordinary — this watch is a conversation starter every time."</p>
+          <span class="testimonial-author">— Marcus T.</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"From design to delivery, the experience was flawless. My custom Primelo is unlike anything you'll find in stores."</p>
+          <span class="testimonial-author">— Elena R.</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The craftsmanship is outstanding. I've owned luxury watches before, but nothing compares to having one made just for you."</p>
+          <span class="testimonial-author">— David K.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="cta-box">
+        <p class="section-subtitle">Get In Touch</p>
+        <h2 class="section-title">Start Your Custom Build</h2>
+        <p class="cta-desc">Ready to create a timepiece that's uniquely yours? Reach out to begin the journey.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <textarea placeholder="Tell us about your dream watch..." rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="logo">PRIMELO</h3>
+          <p>Handcrafted luxury timepieces, designed around you.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="#hero">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Warranty</a>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Primelo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js + GSAP from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
